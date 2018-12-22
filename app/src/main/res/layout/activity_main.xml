@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textview_Carbs"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignBottom="@+id/editText_Carbs"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical"
+        android:text="Total Carbs [g]"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textview_Fat"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignBottom="@+id/editText_Fat"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical"
+        android:text="Total Fat [g]"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textview_Protein"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignBottom="@+id/editText_Protein"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical"
+        android:text="Total Protein [g]"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textview_CR"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignBottom="@+id/editText_CarbRatio"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical"
+        android:text="Carb Ratio [g/u]"
+        android:textSize="18sp" />
+
+
+    <EditText
+        android:id="@+id/editText_Carbs"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editText_Fat"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/editText_Carbs"
+        android:gravity="center"
+        android:layout_alignParentEnd="true"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editText_Protein"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/editText_Fat"
+        android:gravity="center"
+        android:layout_alignParentEnd="true"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editText_CarbRatio"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/editText_Protein"
+        android:gravity="center"
+        android:layout_alignParentEnd="true"
+        android:inputType="number" />
+
+
+    <Button
+        android:id="@+id/button_calculate"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_CarbRatio"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@android:color/holo_green_light"
+        android:text="Calculate"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold" />
+
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/textview_InsulinCarb"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@+id/button_calculate"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical"
+        android:text="Insulin for Carbs [units]"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/textview_InsulinCarbCalculated"
+        android:layout_width="75dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/button_calculate"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/textview_InsulinFPU"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@+id/textview_InsulinCarb"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical"
+        android:text="Insulin for Fat and Protein"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/textview_InsulinFPUCalculated"
+        android:layout_width="75dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/textview_InsulinCarbCalculated"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="18sp" />
+
+
+
+
+
+    <TextView
+        android:id="@+id/textview_Duration"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@+id/textview_InsulinFPU"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical"
+        android:text="Duration [min]"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/textview_DurationCalculated"
+        android:layout_width="75dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/textview_InsulinFPUCalculated"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textview_EquivTBR"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@+id/textview_Duration"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical"
+        android:text="Additional basal equivalent [u/h]"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/textview_EquivTBRvalue"
+        android:layout_width="75dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/textview_DurationCalculated"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="18sp" />
+
+
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/textview_copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:text="Based on Warsaw Pump Therapy School (WPTS)"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/textview_ref"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_above="@id/textview_copyright"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:text="Developped by Kywalh - 2018"
+        android:textSize="12sp" />
+
+
+</RelativeLayout>
