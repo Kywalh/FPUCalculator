@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FPU Calculator</string>
+    <string name="Total_Carbs">Carboidratos Totais [g]</string>
+    <string name="Total_Fat">Lípidos Totais [g]</string>
+    <string name="Total_Protein">Proteínas totais [g]</string>
+    <string name="Carb_Ratio">Relação Carboidrato / Insulina [g/u]</string>
+    <string name="Calculate">Calcular</string>
+    <string name="Insulin_for_Carbs">Insulina para carboidratos [u]</string>
+    <string name="Insulin_for_Fat_and_Protein">Insulina para Lipídios e Proteínas [u]</string>
+    <string name="Duration">Duração [min]</string>
+    <string name="Additional_basal_equiv">Equivalente basal adicional [u/h]</string>
+</resources>
