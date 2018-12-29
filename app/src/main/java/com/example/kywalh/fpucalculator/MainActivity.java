@@ -126,7 +126,7 @@ public class MainActivity extends AppCompatActivity {
 
                 /* Display also the duration in Hours*/
                 double DurationInHours = Math.round(FPUduration / 60);
-                String var4 = String.valueOf((long)FPUduration) + " / " + String.valueOf(DurationInHours);
+                String var4 = String.valueOf((long)FPUduration) + " / " + String.valueOf((int)DurationInHours); /* correction of formatting hours for Duration */
                 mTextView_FP_duration.setText(var4);
 
 
