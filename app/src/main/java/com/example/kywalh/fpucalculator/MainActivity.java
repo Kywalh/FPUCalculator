@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView mTextView_InsulinCarbs;
     private TextView mTextView_TBR;
     private TextView mTextView_InsulinFatProtein;
+    private TextView mTextView_EquivCarbs;
     private TextView mTextView_FP_duration;
 
     private Button mButtonCalculate;
@@ -40,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
         mTextView_InsulinCarbs = findViewById(R.id.textview_InsulinCarbCalculated);
         mTextView_InsulinFatProtein = findViewById(R.id.textview_InsulinFPUCalculated);
+        mTextView_EquivCarbs = findViewById(R.id.textview_EquivCarbsCalculated);
         mTextView_FP_duration = findViewById(R.id.textview_DurationCalculated);
         mTextView_TBR = findViewById(R.id.textview_EquivTBRvalue);
 
@@ -94,8 +96,13 @@ public class MainActivity extends AppCompatActivity {
                 mTextView_InsulinFatProtein.setText(var1);
 
 
+                /*Calculation of equivalent carbs from Fat and Protein for AAPS users using eCarbs
+                 * Solves Issue #5 Additional carbs instead of insulin amounts please
+                 * See  (WPTS) or ‘Warsaw’ formula for explanations  */
 
 
+                double CarbsFromFatProtein = Math.round(InsulinforFP * (int)num5 ) ;
+                mTextView_EquivCarbs.setText(String.valueOf((long)CarbsFromFatProtein));
 
 
                 /*Calculation of duration for the Fat & protein
@@ -115,7 +122,12 @@ public class MainActivity extends AppCompatActivity {
                 else
                     FPUduration = 0;                // Default and safe 0 hours
 
-                mTextView_FP_duration.setText(String.valueOf((long)FPUduration));
+
+
+                /* Display also the duration in Hours*/
+                double DurationInHours = Math.round(FPUduration / 60);
+                String var4 = String.valueOf((long)FPUduration) + " / " + String.valueOf((int)DurationInHours); /* correction of formatting hours for Duration */
+                mTextView_FP_duration.setText(var4);
 
 
                 /*Calculation of equivalent additional basal rate for the same duration */

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <resources>
-    <string name="app_name">FPU Calculator</string>
+    <string name="app_name">Calculatrice FPU</string>
     <string name="Total_Carbs">Total Glucides [g]</string>
     <string name="Total_Fat">Total Lipides [g]</string>
     <string name="Total_Protein">Total Protéines [g]</string>
@@ -8,6 +9,7 @@
     <string name="Calculate">Calculer</string>
     <string name="Insulin_for_Carbs">Insuline pour Glucides [u]</string>
     <string name="Insulin_for_Fat_and_Protein">Insuline pour Lipides et Protéines [u]</string>
-    <string name="Duration">Durée [min]</string>
+    <string name="EquivalentCarbs">Equivalent Glucides issus des Lipides et Protéines [g]</string>
+    <string name="Duration">Durée [min] / [h]</string>
     <string name="Additional_basal_equiv">Équivalent basal additionnelle [u/h]</string>
 </resources>
