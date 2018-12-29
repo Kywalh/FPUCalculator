@@ -9,6 +9,7 @@
     <string name="Calculate">Calcular</string>
     <string name="Insulin_for_Carbs">Insulina para carboidratos [u]</string>
     <string name="Insulin_for_Fat_and_Protein">Insulina para Lipídios e Proteínas [u]</string>
-    <string name="Duration">Duração [min]</string>
+    <string name="EquivalentCarbs">Equivalentes de carboidratos de gordura e proteína [g]</string>
+    <string name="Duration">Duração [min] / [h]</string>
     <string name="Additional_basal_equiv">Equivalente basal adicional [u/h]</string>
 </resources>

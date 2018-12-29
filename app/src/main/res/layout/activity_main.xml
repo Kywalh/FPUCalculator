@@ -9,6 +9,18 @@
 
 
     <TextView
+        android:id="@+id/textview_Warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:text="Only for Kids and Teenagers !!!"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="16sp"/>
+
+
+    <TextView
         android:id="@+id/textview_Carbs"
         android:layout_width="wrap_content"
         android:layout_height="45dp"
@@ -16,7 +28,7 @@
         android:layout_alignParentStart="true"
         android:gravity="center_vertical"
         android:text="@string/Total_Carbs"
-        android:textSize="18sp" />
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/textview_Fat"
@@ -26,7 +38,7 @@
         android:layout_alignParentStart="true"
         android:gravity="center_vertical"
         android:text="@string/Total_Fat"
-        android:textSize="18sp" />
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/textview_Protein"
@@ -36,7 +48,7 @@
         android:layout_alignParentStart="true"
         android:gravity="center_vertical"
         android:text="@string/Total_Protein"
-        android:textSize="18sp" />
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/textview_CR"
@@ -46,44 +58,48 @@
         android:layout_alignParentStart="true"
         android:gravity="center_vertical"
         android:text="@string/Carb_Ratio"
-        android:textSize="18sp" />
+        android:textSize="16sp" />
 
 
     <EditText
         android:id="@+id/editText_Carbs"
         android:layout_width="100dp"
         android:layout_height="45dp"
-        android:layout_alignParentTop="true"
+        android:layout_below="@+id/textview_Warning"
         android:layout_alignParentEnd="true"
         android:gravity="center"
-        android:inputType="number" />
+        android:inputType="number"
+        android:textSize="16sp"/>
 
     <EditText
         android:id="@+id/editText_Fat"
         android:layout_width="100dp"
         android:layout_height="45dp"
         android:layout_below="@+id/editText_Carbs"
-        android:gravity="center"
         android:layout_alignParentEnd="true"
-        android:inputType="number" />
+        android:gravity="center"
+        android:inputType="number"
+        android:textSize="16sp"/>
 
     <EditText
         android:id="@+id/editText_Protein"
         android:layout_width="100dp"
         android:layout_height="45dp"
         android:layout_below="@+id/editText_Fat"
-        android:gravity="center"
         android:layout_alignParentEnd="true"
-        android:inputType="number" />
+        android:gravity="center"
+        android:inputType="number"
+        android:textSize="16sp"/>
 
     <EditText
         android:id="@+id/editText_CarbRatio"
         android:layout_width="100dp"
         android:layout_height="45dp"
         android:layout_below="@+id/editText_Protein"
-        android:gravity="center"
         android:layout_alignParentEnd="true"
-        android:inputType="number" />
+        android:gravity="center"
+        android:inputType="number"
+        android:textSize="16sp"/>
 
 
     <Button
@@ -100,50 +116,69 @@
         android:textStyle="bold" />
 
 
-
-
-
-
-
-
     <TextView
         android:id="@+id/textview_InsulinCarb"
         android:layout_width="wrap_content"
-        android:layout_height="45dp"
+        android:layout_height="30dp"
         android:layout_below="@+id/button_calculate"
         android:layout_alignParentStart="true"
         android:gravity="center_vertical"
         android:text="@string/Insulin_for_Carbs"
-        android:textSize="18sp" />
+        android:textSize="16sp" />
+
     <TextView
         android:id="@+id/textview_InsulinCarbCalculated"
-        android:layout_width="75dp"
-        android:layout_height="45dp"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
         android:layout_below="@+id/button_calculate"
         android:layout_alignParentEnd="true"
         android:gravity="center"
         android:text="0"
-        android:textSize="18sp" />
+        android:textSize="16sp" />
 
 
     <TextView
         android:id="@+id/textview_InsulinFPU"
         android:layout_width="wrap_content"
-        android:layout_height="45dp"
+        android:layout_height="30dp"
         android:layout_below="@+id/textview_InsulinCarb"
         android:layout_alignParentStart="true"
         android:gravity="center_vertical"
         android:text="@string/Insulin_for_Fat_and_Protein"
-        android:textSize="18sp" />
+        android:textSize="16sp" />
+
     <TextView
         android:id="@+id/textview_InsulinFPUCalculated"
-        android:layout_width="75dp"
-        android:layout_height="45dp"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
         android:layout_below="@+id/textview_InsulinCarbCalculated"
         android:layout_alignParentEnd="true"
         android:gravity="center"
         android:text="0"
-        android:textSize="18sp" />
+        android:textSize="16sp" />
+
+
+    // #5 Add equivalent Carbs from Fat and Proteins for AndroidAPS eCarbs or equivalent
+
+    <TextView
+        android:id="@+id/textview_EquivCarbs"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/textview_InsulinFPU"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical"
+        android:text="@string/EquivalentCarbs"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textview_EquivCarbsCalculated"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/textview_InsulinFPUCalculated"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="16sp" />
 
 
 
@@ -152,47 +187,42 @@
     <TextView
         android:id="@+id/textview_Duration"
         android:layout_width="wrap_content"
-        android:layout_height="45dp"
-        android:layout_below="@+id/textview_InsulinFPU"
+        android:layout_height="30dp"
+        android:layout_below="@+id/textview_EquivCarbs"
         android:layout_alignParentStart="true"
         android:gravity="center_vertical"
         android:text="@string/Duration"
-        android:textSize="18sp" />
+        android:textSize="16sp" />
+
     <TextView
         android:id="@+id/textview_DurationCalculated"
-        android:layout_width="75dp"
-        android:layout_height="45dp"
-        android:layout_below="@+id/textview_InsulinFPUCalculated"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/textview_EquivCarbsCalculated"
         android:layout_alignParentEnd="true"
         android:gravity="center"
         android:text="0"
-        android:textSize="18sp" />
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/textview_EquivTBR"
         android:layout_width="wrap_content"
-        android:layout_height="45dp"
+        android:layout_height="30dp"
         android:layout_below="@+id/textview_Duration"
         android:layout_alignParentStart="true"
         android:gravity="center_vertical"
         android:text="@string/Additional_basal_equiv"
-        android:textSize="18sp" />
+        android:textSize="16sp" />
+
     <TextView
         android:id="@+id/textview_EquivTBRvalue"
-        android:layout_width="75dp"
-        android:layout_height="45dp"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
         android:layout_below="@+id/textview_DurationCalculated"
         android:layout_alignParentEnd="true"
         android:gravity="center"
         android:text="0"
-        android:textSize="18sp" />
-
-
-
-
-
-
-
+        android:textSize="16sp" />
 
 
     <TextView
@@ -204,6 +234,7 @@
         android:gravity="center_vertical"
         android:text="Based on Warsaw Pump Therapy School (WPTS)"
         android:textSize="12sp" />
+
     <TextView
         android:id="@+id/textview_ref"
         android:layout_width="wrap_content"
@@ -213,7 +244,6 @@
         android:gravity="center_vertical"
         android:text="Developped by Kywalh - 2018"
         android:textSize="12sp" />
-
 
 
 </RelativeLayout>
