@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Solves the #6 Add German language -->
+<resources>
+    <string name="app_name">FPE Kalkulator</string>
+    <string name="Total_Carbs">Gesamt Kohlenhydrate [g]</string>
+    <string name="Total_Fat">Gesamt Fett [g]</string>
+    <string name="Total_Protein">Gesamt Protein [g]</string>
+    <string name="Carb_Ratio">Kohlenhydrat-Verhältnis [g/IE]</string>
+    <string name="Calculate">Kalkuliere</string>
+    <string name="Insulin_for_Carbs">Insulin für Kohlenhydrate [IE]</string>
+    <string name="Insulin_for_Fat_and_Protein">Insulin für Fett und Protein [IE]</string>
+    <string name="Duration">Dauer [Min]</string>
+    <string name="Additional_basal_equiv">Zusätzliche Basalrate [IE/h]</string>
+</resources>

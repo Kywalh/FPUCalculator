@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <resources>
-    <string name="app_name">FPU Calculator</string>
+    <string name="app_name">FPU Calculadora</string>
     <string name="Total_Carbs">Carboidratos Totais [g]</string>
     <string name="Total_Fat">Lípidos Totais [g]</string>
     <string name="Total_Protein">Proteínas totais [g]</string>

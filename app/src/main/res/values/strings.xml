@@ -1,8 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
 <resources>
     <string name="app_name">FPU Calculator</string>
-
-
-
     <string name="Total_Carbs">Total Carbs [g]</string>
     <string name="Total_Fat">Total Fat [g]</string>
     <string name="Total_Protein">Total Proteins [g]</string>
@@ -12,8 +11,4 @@
     <string name="Insulin_for_Fat_and_Protein">Insulin for Fat and Protein [units]</string>
     <string name="Duration">Duration [min]</string>
     <string name="Additional_basal_equiv">Additional basal equivalent [u/h]</string>
-
-
-
-
 </resources>
