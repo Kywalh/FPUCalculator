@@ -79,8 +79,9 @@ public class MainActivity extends AppCompatActivity {
 
 
                 /*Insulin for Carbs calculation based on Carbs divided by Carb Ratio */
-                double Insulin_for_Carbs = Math.round((num2 * 20.0 / num5)) / 20.0; //rounding to 0.05
-                mTextView_InsulinCarbs.setText(String.valueOf(Insulin_for_Carbs));
+                double rounded_Insulin_for_Carbs = Math.round((num2 * 20.0 / num5)) / 20.0; //rounding to 0.05
+                String var0 = String.format("%.2f", rounded_Insulin_for_Carbs); // display with 2 digits
+                mTextView_InsulinCarbs.setText(String.valueOf(var0));
 
 
 
