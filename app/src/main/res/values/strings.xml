@@ -12,4 +12,5 @@
     <string name="EquivalentCarbs">Equivalent Carbs from Fat and Protein [g]</string>
     <string name="Duration">Duration [min] / [hr]</string>
     <string name="Additional_basal_equiv">Additional basal equivalent [u/h]</string>
+    <string name="Warning">Only for Kids and Teenagers !!!</string>
 </resources>
