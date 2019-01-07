@@ -9,7 +9,8 @@
     <string name="Calculate">Kalkuliere</string>
     <string name="Insulin_for_Carbs">Insulin für Kohlenhydrate [IE]</string>
     <string name="Insulin_for_Fat_and_Protein">Insulin für Fett und Protein [IE]</string>
-    <string name="EquivalentCarbs">Gleichwertige  Kohlenhydrate aus Fett und Protein [g]</string>
+    <string name="EquivalentCarbs">Gleichw. Kohlenhy. aus Fett/Protein [g]</string>
     <string name="Duration">Dauer [Min] / [St]</string>
     <string name="Additional_basal_equiv">Zusätzliche Basalrate [IE/h]</string>
+    <string name="Warning">Nur für Kinder und Jugendliche !!!</string>
 </resources>

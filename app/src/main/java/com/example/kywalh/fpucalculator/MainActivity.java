@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
                  * See  (WPTS) or ‘Warsaw’ formula for explanations  */
 
 
-                double CarbsFromFatProtein = Math.round(InsulinforFP * (int)num5 ) ;
+                double CarbsFromFatProtein = Math.round(InsulinforFP * (long)num5 ) ; /* correction of issue #11 about limitaion to 255 linked to casting to int instead of long*/
                 mTextView_EquivCarbs.setText(String.valueOf((long)CarbsFromFatProtein));
 
 

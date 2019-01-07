@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FPU Kalkulačka</string>
+    <string name="Calculate">Vypočítat</string>
+    <string name="Total_Carbs">Celk. sacharidy [g]</string>
+    <string name="Total_Fat">Celk. tuky [g]</string>
+    <string name="Total_Protein">Celk bílkoviny [g]</string>
+    <string name="Carb_Ratio">Sach. poměr [g/u]</string>
+    <string name="Insulin_for_Carbs">Inzulín na sacharidy [jednotek]</string>
+    <string name="Duration">Trvání [min] / [h]</string>
+    <string name="Insulin_for_Fat_and_Protein">Inzulín na tuky a bílkovin [jednotek]</string>
+    <string name="EquivalentCarbs">Ekivalent sach. z tuků a bílkovin [g]</string>
+    <string name="Additional_basal_equiv">Ekivalent dodatečneho bazálu [j/h]</string>
+    <string name="Warning">Pouze pro děti a mladistvé !!!</string>
+</resources>

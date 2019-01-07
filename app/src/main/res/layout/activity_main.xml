@@ -15,7 +15,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:gravity="center_vertical"
-        android:text="Only for Kids and Teenagers !!!"
+        android:text="@string/Warning"
         android:textColor="@android:color/holo_red_dark"
         android:textSize="16sp"/>
 
