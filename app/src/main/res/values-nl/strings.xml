@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Solves the #13 Dutch Translation -->
+<resources>
+    <string name="app_name">FPU Calculator</string>
+    <string name="Total_Carbs">Hoeveelheid Koolhydraten [gr]</string>
+    <string name="Total_Fat">Hoeveelheid Vet [gr]</string>
+    <string name="Total_Protein">Hoeveelheid Proteine [gr]</string>
+    <string name="Carb_Ratio">Koolhydraat Ratio [gr/e]</string>
+    <string name="Calculate">Bereken</string>
+    <string name="Insulin_for_Carbs">Dosis voor Koolhydraten [eenheden]</string>
+    <string name="Insulin_for_Fat_and_Protein">Dosis voor Vet/Proteine [eenheden]</string>
+    <string name="EquivalentCarbs">Equivalent Koolhydraten van Vet/Proteine [gr]</string>
+    <string name="Duration">Duratie [min] / [uur]</string>
+    <string name="Additional_basal_equiv">Additioneel basaal equivalent [e/uur]</string>
+    <string name="Warning">Alleen voor kinderen en tieners !!!</string>
+</resources>
