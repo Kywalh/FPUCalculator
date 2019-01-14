@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">FPU Kalkulaèka</string>
+    <string name="app_name">Kalkulačka TPJ</string>
     <string name="Total_Carbs">Celk. sacharidy [g]</string>
     <string name="Total_Fat">Celk. tuky [g]</string>
     <string name="Total_Protein">Celk. bílkoviny [g]</string>
-    <string name="Carb_Ratio">Sach. pomìr [g/j]</string>
-    <string name="Calculate">Vypoèítat</string>
+    <string name="Carb_Ratio">Sach. poměr [g/j]</string>
+    <string name="Calculate">Vypočítat</string>
     <string name="Insulin_for_Carbs">Inzulín na sacharidy [jednotek]</string>
-    <string name="Insulin_for_Fat_and_Protein">Inzulín an tuky a bílkoviny [jednotek]</string>
-    <string name="EquivalentCarbs">Ekvivalent sacharidù z tukù a bílkovin [g]</string>
+    <string name="Insulin_for_Fat_and_Protein">Inzulín na tuky a bílkoviny [jednotek]</string>
+    <string name="EquivalentCarbs">Ekvivalent sacharidů z tuků a bílkovin [g]</string>
     <string name="Duration">Trvání [min] / [h]</string>
-    <string name="Additional_basal_equiv">Ekvivalent dodateèného bazálu [j/h]</string>
-    <string name="Warning">Pouze pro dìti a mladistvé!!!</string>
+    <string name="Additional_basal_equiv">Ekvivalent dodatečného bazálu [j/h]</string>
+    <string name="Warning">Pouze pro děti a mladistvé!!!</string>
 </resources>
