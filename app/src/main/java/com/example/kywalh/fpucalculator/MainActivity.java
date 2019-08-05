@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText mEditText_Fat;
     private EditText mEditText_Protein;
     private EditText mEditText_CR;
-
+    private EditText mEditText_Ratio;
 
     private TextView mTextView_InsulinCarbs;
     private TextView mTextView_TBR;
@@ -31,13 +31,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         mEditText_Carbs = findViewById(R.id.editText_Carbs);
         mEditText_Fat = findViewById(R.id.editText_Fat);
         mEditText_Protein = findViewById(R.id.editText_Protein);
         mEditText_CR = findViewById(R.id.editText_CarbRatio);
-
-
+        mEditText_Ratio = findViewById(R.id.editText_Ratio);
+        mEditText_Ratio.setText("100");
 
         mTextView_InsulinCarbs = findViewById(R.id.textview_InsulinCarbCalculated);
         mTextView_InsulinFatProtein = findViewById(R.id.textview_InsulinFPUCalculated);
@@ -53,33 +52,52 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+
+                int numCarbs = Integer.parseInt(mEditText_Carbs.getText().toString());
+                int numFat = Integer.parseInt(mEditText_Fat.getText().toString());
+                int numProtein = Integer.parseInt(mEditText_Protein.getText().toString());
+                int numCR = Integer.parseInt(mEditText_CR.getText().toString());
+                int numRatio = Integer.parseInt(mEditText_Ratio.getText().toString());
+
+
+
                 //Verify inputs from user and act accordingly
 
                 if (mEditText_Carbs.getText().toString().length() == 0) {
                     mEditText_Carbs.setText("0");
+                    numCarbs = 0;
                 }
                 if (mEditText_Fat.getText().toString().length() == 0) {
                     mEditText_Fat.setText("0");
+                    numFat = 0;
                 }
                 if (mEditText_Protein.getText().toString().length() == 0) {
                     mEditText_Protein.setText("0");
+                    numProtein = 0;
                 }
                 if (mEditText_CR.getText().toString().length() == 0) {
                     mEditText_CR.setText(String.valueOf(255)); // safety feature
+                    numCR = 255;
+                }
+
+                if (mEditText_Ratio.getText().toString().length() == 0) {
+                    mEditText_Ratio.setText("100");
+                    numRatio = 100;
+                }
+
+                if (numRatio < 20) {
+                    mEditText_Ratio.setText("20");
+                    numRatio = 20;
+                }
+                if (numRatio > 100) {
+                    mEditText_Ratio.setText("100");
+                    numRatio = 100;
                 }
 
 
-
-                int num2 = Integer.parseInt(mEditText_Carbs.getText().toString());
-                int num3 = Integer.parseInt(mEditText_Fat.getText().toString());
-                int num4 = Integer.parseInt(mEditText_Protein.getText().toString());
-                int num5 = Integer.parseInt(mEditText_CR.getText().toString());
-
-
-
-
                 /*Insulin for Carbs calculation based on Carbs divided by Carb Ratio */
-                double rounded_Insulin_for_Carbs = Math.round((num2 * 20.0 / num5)) / 20.0; //rounding to 0.05
+                double Insulin_for_Carbs = ((numRatio * numCarbs ) / (numCR * 100));
+                double rounded_Insulin_for_Carbs = Math.round(Insulin_for_Carbs * 20.0) / 20.0; //rounding to 0.05
                 String var0 = String.format("%.2f", rounded_Insulin_for_Carbs); // display with 2 digits
                 mTextView_InsulinCarbs.setText(String.valueOf(var0));
 
@@ -88,10 +106,10 @@ public class MainActivity extends AppCompatActivity {
                 /*Calculation of FPU based on 9 x Fat + 4 x Protein
                  * See  (WPTS) or ‘Warsaw’ formula for explanations  */
 
-                double FPU = ((double)num3 * 9 + (double)num4 * 4)  ;
+                double FPU = ((double)numFat * 9 + (double)numProtein * 4)  ;
 
                 // Calculation of insulin needed for Fat and Protein
-                double  InsulinforFP = (FPU / 100) * (10 / (double)num5); // scale the FPU with the Carb ratio
+                double  InsulinforFP = (100 - numRatio) * numCarbs / (numCR * 100) + (FPU / 100 ) * (10 / (double)numCR); // scale the FPU with the Carb ratio
                 double rounded_InsulinFatProtein = Math.round(InsulinforFP * 20.0) / 20.0; //rounding to 0.05
                 String var1 = String.format("%.2f", rounded_InsulinFatProtein); // display with 2 digits
                 mTextView_InsulinFatProtein.setText(var1);
@@ -102,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
                  * See  (WPTS) or ‘Warsaw’ formula for explanations  */
 
 
-                double CarbsFromFatProtein = Math.round(InsulinforFP * (long)num5 ) ; /* correction of issue #11 about limitaion to 255 linked to casting to int instead of long*/
+                double CarbsFromFatProtein = Math.round(InsulinforFP * (long)numCR ) ; /* correction of issue #11 about limitation to 255 linked to casting to int instead of long*/
                 mTextView_EquivCarbs.setText(String.valueOf((long)CarbsFromFatProtein));
 
 
@@ -146,3 +164,4 @@ public class MainActivity extends AppCompatActivity {
 
     }
 }
+

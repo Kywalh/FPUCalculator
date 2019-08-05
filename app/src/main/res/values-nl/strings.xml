@@ -13,4 +13,5 @@
     <string name="Duration">Duratie [min] / [uur]</string>
     <string name="Additional_basal_equiv">Additioneel basaal equivalent [e/uur]</string>
     <string name="Warning">Alleen voor kinderen en tieners !!!</string>
+    <string name="Ratio">Ratio</string>
 </resources>

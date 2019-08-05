@@ -13,4 +13,5 @@
     <string name="Duration">Durée [min] / [h]</string>
     <string name="Additional_basal_equiv">Équivalent basal additionnelle [u/h]</string>
     <string name="Warning">Uniquement pour enfants et adolescents !!!</string>
+    <string name="Ratio">Répartition [%]</string>
 </resources>

@@ -13,4 +13,5 @@
     <string name="Duration">Dauer [Min] / [St]</string>
     <string name="Additional_basal_equiv">Zusätzliche Basalrate [IE/h]</string>
     <string name="Warning">Nur für Kinder und Jugendliche !!!</string>
+    <string name="Ratio">Ratio</string>
 </resources>

@@ -60,6 +60,16 @@
         android:text="@string/Carb_Ratio"
         android:textSize="16sp" />
 
+    <TextView
+        android:id="@+id/textview_Ratio"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignBottom="@+id/editText_Ratio"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical"
+        android:text="@string/Ratio"
+        android:textSize="16sp" />
+
 
     <EditText
         android:id="@+id/editText_Carbs"
@@ -102,11 +112,25 @@
         android:textSize="16sp"/>
 
 
+
+
+    <EditText
+        android:id="@+id/editText_Ratio"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/editText_CarbRatio"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:inputType="number"
+        android:textSize="16sp"/>
+
+
+
     <Button
         android:id="@+id/button_calculate"
         android:layout_width="125dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText_CarbRatio"
+        android:layout_below="@+id/editText_Ratio"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
         android:layout_marginBottom="15dp"
@@ -242,7 +266,7 @@
         android:layout_above="@id/textview_copyright"
         android:layout_centerHorizontal="true"
         android:gravity="center_vertical"
-        android:text="Developped by Kywalh - 2018"
+        android:text="Developped by Kywalh - 2019"
         android:textSize="12sp" />
 
 

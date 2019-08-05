@@ -12,4 +12,5 @@
     <string name="Duration">Trvání [min] / [h]</string>
     <string name="Additional_basal_equiv">Ekvivalent dodatečného bazálu [j/h]</string>
     <string name="Warning">Pouze pro děti a mladistvé!!!</string>
+    <string name="Ratio">Ratio</string>
 </resources>
