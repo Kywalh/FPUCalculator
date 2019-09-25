@@ -14,4 +14,7 @@
     <string name="Additional_basal_equiv">Additioneel basaal equivalent [e/uur]</string>
     <string name="Warning">Alleen voor kinderen en tieners !!!</string>
     <string name="Ratio">Ratio</string>
+    <string name="EmptyFieldsMessage">Please load data</string>
+    <string name="DefaultValuesLoadedToastMessage">Default safety value loaded...</string>
+    <string name="DefaultMinimumSplitRatioLoadedToastMessage">Minimum split ratio reached, minimum allowed value loaded...</string>
 </resources>

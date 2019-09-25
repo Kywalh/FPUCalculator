@@ -108,8 +108,8 @@
         android:layout_below="@+id/editText_Protein"
         android:layout_alignParentEnd="true"
         android:gravity="center"
-        android:inputType="number"
-        android:textSize="16sp"/>
+        android:inputType="numberDecimal"
+        android:textSize="16sp" />
 
 
 

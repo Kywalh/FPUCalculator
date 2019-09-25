@@ -13,4 +13,7 @@
     <string name="Additional_basal_equiv">Ekvivalent dodatečného bazálu [j/h]</string>
     <string name="Warning">Pouze pro děti a mladistvé!!!</string>
     <string name="Ratio">Ratio</string>
+    <string name="EmptyFieldsMessage">Please load data</string>
+    <string name="DefaultValuesLoadedToastMessage">Default safety value loaded...</string>
+    <string name="DefaultMinimumSplitRatioLoadedToastMessage">Minimum split ratio reached, minimum allowed value loaded...</string>
 </resources>

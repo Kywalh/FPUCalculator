@@ -14,4 +14,7 @@
     <string name="Additional_basal_equiv">Équivalent basal additionnelle [u/h]</string>
     <string name="Warning">Uniquement pour enfants et adolescents !!!</string>
     <string name="Ratio">Répartition [%]</string>
+    <string name="EmptyFieldsMessage">Merci de renseigner les champs...</string>
+    <string name="DefaultValuesLoadedToastMessage">Valeurs par défaut chargées...</string>
+    <string name="DefaultMinimumSplitRatioLoadedToastMessage">La répartition ne peut être inférieure à 20%. Valeur minimum par défaut chargée...</string>
 </resources>

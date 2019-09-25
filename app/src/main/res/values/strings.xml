@@ -14,4 +14,7 @@
     <string name="Additional_basal_equiv">Additional basal equivalent [u/h]</string>
     <string name="Warning">Only for Kids and Teenagers !!!</string>
     <string name="Ratio">Split [%]</string>
+    <string name="EmptyFieldsMessage">Fields need to be filled in...</string>
+    <string name="DefaultValuesLoadedToastMessage">Default safety value loaded...</string>
+    <string name="DefaultMinimumSplitRatioLoadedToastMessage">Minimum split ratio reached, minimum allowed value loaded...</string>
 </resources>
